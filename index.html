@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso vue</title>
+        <script src='https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js'></script>
+    </head>
+
+    <body>
+
+        <div id="divID">
+            <p>O nome do player é: {{player.nome}}</p>
+            <p>O texto é: {{text}}</p>
+            <p>O ano que vem será: {{number+2}}</p>
+            <p>O objeto é: {{player}}</p>
+        </div>
+
+        <script>
+            var vue = new Vue({
+                el: '#divID',
+                data:{
+                    text: "Hello World",
+                    number: 2022,
+                    player:{
+                        nome: "Mario",
+                        vidas: 3
+                    }
+                }
+            })
+
+            vue.player.nome = "Luidi"
+            vue.freeze(nome)
+            vue.player.nome = "Princesa"
+        </script>
+    </body>
+</html>
