@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Curso Vue</title>
+        <script src='https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js'></script>
+    </head>
+
+    <body>
+        <div id="app">
+           <ul>
+                <li v-for="(value,key,index) in player">
+                    {{key}} - {{value}}
+                </li>
+           </ul>
+        </div>
+        <script>
+            var app = new Vue ({
+                el: '#app',
+                data:{
+                   player:{
+                    nome: "Mario",
+                    vidas: 3,
+                    mundo: "Candy Island",
+                    poweups: true
+                   }
+                }
+            })
+        </script>
+    </body>
+</html>

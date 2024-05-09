@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Curso Vue</title>
+        <script src='https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js'></script>
+    </head>
+
+    <body>
+        <div id="app">
+          <input v-model='textInput'>
+        </div>
+        <script>
+            var buttonVue = new Vue ({
+                el: '#app',
+                data:{
+                    textInput: ""
+                }
+            })
+        </script>
+    </body>
+</html>
